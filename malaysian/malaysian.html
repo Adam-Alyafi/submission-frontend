@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Malaysian Meal's Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>World Meal's</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">American</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="../america/america.html">American</a>
+                            </li>
+                            <li>
+                                <a href="../mexican/mexican.html">Mexican</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+                <li class="active">
+                    <li>
+                        <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Europe</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu2">
+                            <li>
+                                <a href="../british/british.html">British</a>
+                            </li>
+                            <li>
+                                <a href="../canadian/canadian.html">Canadian</a>
+                            </li>
+                            <li>
+                                <a href="../dutch/dutch.html">Dutch</a>
+                            </li>
+                            <li>
+                                <a href="../french/french.html">French</a>
+                            </li>
+                            <li>
+                                <a href="../greek/greek.html">Greek</a>
+                            </li>
+                            <li>
+                                <a href="../irish/irish.html">Irish</a>
+                            </li>
+                            <li>
+                                <a href="../italian/italian.html">Italian</a>
+                            </li>
+                            <li>
+                                <a href="../russian/russian.html">Russian</a>
+                            </li>
+                            <li>
+                                <a href="../spanish/spanish.html">Spanish</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+                <li class="active">
+                    <li>
+                        <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">African</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu3">
+                            <li>
+                                <a href="../egyptian/egyptian.html">Egyptian</a>
+                            </li>
+                            <li>
+                                <a href="../jamaican/jamaican.html">Jamaican</a>
+                            </li>
+                            <li>
+                                <a href="../kenyan/kenyan.html">Kenyan</a>
+                            </li>
+                            <li>
+                                <a href="../moroccan/moroccan.html">Moroccan</a>
+                            </li>
+                            <li>
+                                <a href="../tunisian/tunisian.html">Tunisian</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+                <li class="active">
+                    <li>
+                        <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Asian</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu4">
+                            <li>
+                                <a href="../chinese/chinese.html">Chinese</a>
+                            </li>
+                            <li>
+                                <a href="../indian/indian.html">Indian</a>
+                            </li>
+                            <li>
+                                <a href="../japanese/japanese.html">Japanese</a>
+                            </li>
+                            <li>
+                                <a href="./malaysian.html">Malaysian</a>
+                            </li>
+                            <li>
+                                <a href="../thai/thai.html">Thai</a>
+                            </li>
+                            <li>
+                                <a href="../turkish/turkish.html">Turkish</a>
+                            </li>
+                            <li>
+                                <a href="../vietnamese/vietnamese.html">Vietnamese</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <h1 class="judul">Malaysian Meal's Finder</h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <search-bar></search-bar>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                    <meal-list></meal-list>
+                </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <div id="footer">
+            <p>Copyright@Adam_Alyafi</p>
+        </div>
+        <script src="app.js" type="module"></script>
+</body>
+
+</html>
